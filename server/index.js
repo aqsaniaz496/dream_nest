@@ -24,7 +24,9 @@ const PORT = 3001;
 
 async function connectToDatabase() {
     try {
-        mongoose.connect(process.env.MONGO_URL);
+        mongoose.connect(process.env.MONGO_URL,{
+            dbName: "dream-nest"
+        });
         console.log("Connected to MongoDB!");
         app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
     } catch (error) {
