@@ -16,6 +16,9 @@ import {
   FaFireExtinguisher,
   FaUmbrellaBeach,
   FaKey,
+  FaMountain,
+  FaWater,
+  FaTree,
 } from "react-icons/fa";
 import { FaHouseUser, FaPeopleRoof, FaKitchenSet } from "react-icons/fa6";
 import {
@@ -28,7 +31,13 @@ import {
 } from "react-icons/bi";
 import { BsSnow, BsFillDoorOpenFill, BsPersonWorkspace } from "react-icons/bs";
 import { IoDiamond } from "react-icons/io5";
-import { MdOutlineVilla, MdMicrowave, MdBalcony, MdYard, MdPets } from "react-icons/md";
+import {
+  MdOutlineVilla,
+  MdMicrowave,
+  MdBalcony,
+  MdYard,
+  MdPets,
+} from "react-icons/md";
 import {
   PiBathtubFill,
   PiCoatHangerFill,
@@ -43,6 +52,7 @@ import {
   GiCampfire,
 } from "react-icons/gi";
 import { AiFillCar } from "react-icons/ai";
+import { Cottage } from "@mui/icons-material";
 
 export const categories = [
   {
@@ -50,33 +60,33 @@ export const categories = [
     icon: <BiWorld />,
   },
   {
-    img: "assets/beach_cat.jpg",
-    label: "Beachfront",
+    img: "assets/BeachHuts_cat.jpg",
+    label: "Beach Huts",
     icon: <TbBeach />,
     description: "This property is close to the beach!",
   },
   {
-    img: "assets/windmill_cat.webp",
-    label: "Windmills",
-    icon: <GiWindmill />,
+    img: "assets/MountainRetreats_cat.webp",
+    label: "Mountain Retreats",
+    icon: <FaMountain />,
     description: "This property is has windmills!",
   },
   {
-    img: "assets/modern_cat.webp",
-    label: "Iconic cities",
-    icon: <MdOutlineVilla />,
-    description: "This property is modern!",
+    img: "assets/LakesideLodges_cat.jpg",
+    label: "Lakeside Lodges",
+    icon: <FaWater />,
+    description: "This property is lake side lodges!",
   },
   {
-    img: "assets/countryside_cat.webp",
-    label: "Countryside",
-    icon: <TbMountain />,
+    img: "assets/JungleHideouts_cat.jpeg",
+    label: "Jungle Hideouts",
+    icon: <FaTree />,
     description: "This property is in the countryside!",
   },
   {
-    img: "assets/pool_cat.jpg",
-    label: "Amazing Pools",
-    icon: <TbPool />,
+    img: "assets/CulturalCottages_cat.jpeg",
+    label: "Cultural Cottages",
+    icon: <Cottage />,
     description: "This is property has a beautiful pool!",
   },
   {
@@ -84,30 +94,6 @@ export const categories = [
     label: "Islands",
     icon: <GiIsland />,
     description: "This property is on an island!",
-  },
-  {
-    img: "assets/lake_cat.webp",
-    label: "Lakefront",
-    icon: <GiBoatFishing />,
-    description: "This property is near a lake!",
-  },
-  {
-    img: "assets/skiing_cat.jpg",
-    label: "Ski-in/out",
-    icon: <FaSkiing />,
-    description: "This property has skiing activies!",
-  },
-  {
-    img: "assets/castle_cat.webp",
-    label: "Castles",
-    icon: <GiCastle />,
-    description: "This property is an ancient castle!",
-  },
-  {
-    img: "assets/cave_cat.jpg",
-    label: "Caves",
-    icon: <GiCaveEntrance />,
-    description: "This property is in a spooky cave!",
   },
   {
     img: "assets/camping_cat.jpg",
@@ -126,12 +112,6 @@ export const categories = [
     label: "Desert",
     icon: <GiCactus />,
     description: "This property is in the desert!",
-  },
-  {
-    img: "assets/barn_cat.jpg",
-    label: "Barns",
-    icon: <GiBarn />,
-    description: "This property is in a barn!",
   },
   {
     img: "assets/lux_cat.jpg",
@@ -196,7 +176,7 @@ export const facilities = [
   },
   {
     name: "Dedicated workspace",
-    icon: <BsPersonWorkspace />
+    icon: <BsPersonWorkspace />,
   },
   {
     name: "Air Conditioning",
@@ -264,10 +244,10 @@ export const facilities = [
   },
   {
     name: "Self check-in",
-    icon: <FaKey />
+    icon: <FaKey />,
   },
   {
     name: " Pet allowed",
-    icon: <MdPets />
-  }
+    icon: <MdPets />,
+  },
 ];

@@ -65,8 +65,12 @@
     }
   }
 
-  h3 {
+  .location {
     font-size: 18px;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   p {
